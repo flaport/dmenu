@@ -21,6 +21,7 @@ Afterwards enter the following command to build and install `dmenu`
 ## Patches
 The following patches were applied:
 * [dmenu-center-4.8](https://tools.suckless.org/dmenu/patches/center/)
+* [dmenu-border-4.9](https://tools.suckless.org/dmenu/patches/border/)
 
 ## Running dmenu
 See `man dmenu` for details.
