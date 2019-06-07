@@ -25,6 +25,7 @@ The following patches were applied:
 * [dmenu-fuzzymatch-20170606-f428f3e](https://tools.suckless.org/dmenu/patches/fuzzymatch/)
 * [dmenu-initialtext-4.7](https://tools.suckless.org/dmenu/patches/initialtext/)
 * [dmenu-navhistory-4.6](https://tools.suckless.org/dmenu/patches/navhistory/)
+* [dmenu-scroll-20180607-a314412](https://tools.suckless.org/dmenu/patches/scroll/)
 
 ## Running dmenu
 See `man dmenu` for details.
