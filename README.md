@@ -26,6 +26,7 @@ The following patches were applied:
 * [dmenu-initialtext-4.7](https://tools.suckless.org/dmenu/patches/initialtext/)
 * [dmenu-navhistory-4.6](https://tools.suckless.org/dmenu/patches/navhistory/)
 * [dmenu-scroll-20180607-a314412](https://tools.suckless.org/dmenu/patches/scroll/)
+* [dmenu-password-4.7](https://tools.suckless.org/dmenu/patches/password/)
 
 ## Running dmenu
 See `man dmenu` for details.
