@@ -24,6 +24,7 @@ The following patches were applied:
 * [dmenu-border-4.9](https://tools.suckless.org/dmenu/patches/border/)
 * [dmenu-fuzzymatch-20170606-f428f3e](https://tools.suckless.org/dmenu/patches/fuzzymatch/)
 * [dmenu-initialtext-4.7](https://tools.suckless.org/dmenu/patches/initialtext/)
+* [dmenu-navhistory-4.6](https://tools.suckless.org/dmenu/patches/navhistory/)
 
 ## Running dmenu
 See `man dmenu` for details.

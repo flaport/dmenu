@@ -17,6 +17,10 @@ static const char *colors[SchemeLast][2] = {
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines      = 0;
 
+/* history */
+static unsigned int maxhist    = 15;
+static int histnodup           = 1;	/* if 0, record repeated histories */
+
 /*
  * Characters not considered part of a word while deleting words
  * for example: " /?\"&[]"
