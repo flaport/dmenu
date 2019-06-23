@@ -11,9 +11,9 @@ static const char *fonts[] = {
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 
 /* colors */
-static const char col_fg[]      = "#00ad9c";
+static const char col_fg[]      = "#268bd2"; //"#2aa198";
 static const char col_bg[]      = "#fdf6e3";
-static const char col_black[]   = "#222222";
+static const char col_black[]   = "#32302f";
 
 static const char *colors[SchemeLast][2] = {
 /*                      fg         bg       */
