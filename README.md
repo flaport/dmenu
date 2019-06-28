@@ -8,15 +8,12 @@ In order to build `dmenu` you need the `Xlib` header files.
 
 
 ## Installation
-Edit `config.mk` to match your local setup (dmenu is installed as
-`/usr/local/bin/dmenu` by default).
-
-Afterwards enter the following command to build and install `dmenu`
-(if necessary as root):
-
+Edit `config.mk` to match your local setup and configure `config.def.h` to your liking. Afterwards enter the following command to build and install `dmenu`:
 ```
-    make clean install
+    sudo make clean install
 ```
+The `dmenu` executable will be installed in `/usr/local/bin/dmenu`.
+
 
 ## Patches
 The following patches were applied:
@@ -27,6 +24,9 @@ The following patches were applied:
 * [dmenu-navhistory-4.6](https://tools.suckless.org/dmenu/patches/navhistory/)
 * [dmenu-scroll-20180607-a314412](https://tools.suckless.org/dmenu/patches/scroll/)
 * [dmenu-password-4.7](https://tools.suckless.org/dmenu/patches/password/)
+* [dmenu-instant-4.7](https://tools.suckless.org/dmenu/patches/instant/)
+* [dmenu-mousesupport-4.7](https://tools.suckless.org/dmenu/patches/mouse-support/)
+
 
 ## Running dmenu
 See `man dmenu` for details.
