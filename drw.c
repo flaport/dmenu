@@ -11,7 +11,7 @@
 #define UTF_INVALID 0xFFFD
 #define UTF_SIZ     4
 
-int has_libxft_gbra = 0;
+int has_libxft_bgra = 0;
 
 static const unsigned char utfbyte[UTF_SIZ + 1] = {0x80,    0, 0xC0, 0xE0, 0xF0};
 static const unsigned char utfmask[UTF_SIZ + 1] = {0xC0, 0x80, 0xE0, 0xF0, 0xF8};
@@ -141,7 +141,7 @@ xfont_create(Drw *drw, const char *fontname, FcPattern *fontpattern)
 	 * https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=916349
 	 * and lots more all over the internet.
 	 */
-    if (!has_libxft_gbra){
+    if (!has_libxft_bgra){
         FcBool iscol;
         if(FcPatternGetBool(xfont->pattern, FC_COLOR, 0, &iscol) == FcResultMatch && iscol) {
             XftFontClose(drw->dpy, xfont);
@@ -178,7 +178,7 @@ drw_fontset_create(Drw* drw, const char *fonts[], size_t fontcount)
 	if (!drw || !fonts)
 		return NULL;
 
-    has_libxft_gbra = !system("pacman -Q libxft | grep bgra > /dev/null 2> /dev/null");
+    has_libxft_bgra = !system("pacman -Q libxft | grep bgra > /dev/null 2> /dev/null");
 
 	for (i = 1; i <= fontcount; i++) {
 		if ((cur = xfont_create(drw, fonts[fontcount - i], NULL))) {
